@@ -1,0 +1,166 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "array",
+  "items": [
+    {
+      "id": "http://jsonschema.net/0",
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "id": "http://jsonschema.net/0/firstName",
+          "type": "string"
+        },
+        "lastName": {
+          "id": "http://jsonschema.net/0/lastName",
+          "type": "string"
+        },
+        "age": {
+          "id": "http://jsonschema.net/0/age",
+          "type": "integer"
+        },
+        "address": {
+          "id": "http://jsonschema.net/0/address",
+          "type": "object",
+          "properties": {
+            "streetAddress": {
+              "id": "http://jsonschema.net/0/address/streetAddress",
+              "type": "string"
+            },
+            "city": {
+              "id": "http://jsonschema.net/0/address/city",
+              "type": "string"
+            },
+            "state": {
+              "id": "http://jsonschema.net/0/address/state",
+              "type": "string"
+            },
+            "postalCode": {
+              "id": "http://jsonschema.net/0/address/postalCode",
+              "type": "string"
+            }
+          }
+        },
+        "phoneNumber": {
+          "id": "http://jsonschema.net/0/phoneNumber",
+          "type": "array",
+          "items": [
+            {
+              "id": "http://jsonschema.net/0/phoneNumber/0",
+              "type": "object",
+              "properties": {
+                "type": {
+                  "id": "http://jsonschema.net/0/phoneNumber/0/type",
+                  "type": "string"
+                },
+                "number": {
+                  "id": "http://jsonschema.net/0/phoneNumber/0/number",
+                  "type": "string"
+                }
+              }
+            },
+            {
+              "id": "http://jsonschema.net/0/phoneNumber/1",
+              "type": "object",
+              "properties": {
+                "type": {
+                  "id": "http://jsonschema.net/0/phoneNumber/1/type",
+                  "type": "string"
+                },
+                "number": {
+                  "id": "http://jsonschema.net/0/phoneNumber/1/number",
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "firstName",
+        "lastName",
+        "age",
+        "address",
+        "phoneNumber"
+      ]
+    },
+    {
+      "id": "http://jsonschema.net/1",
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "id": "http://jsonschema.net/1/firstName",
+          "type": "string"
+        },
+        "lastName": {
+          "id": "http://jsonschema.net/1/lastName",
+          "type": "string"
+        },
+        "age": {
+          "id": "http://jsonschema.net/1/age",
+          "type": "integer"
+        },
+        "address": {
+          "id": "http://jsonschema.net/1/address",
+          "type": "object",
+          "properties": {
+            "streetAddress": {
+              "id": "http://jsonschema.net/1/address/streetAddress",
+              "type": "string"
+            },
+            "city": {
+              "id": "http://jsonschema.net/1/address/city",
+              "type": "string"
+            },
+            "state": {
+              "id": "http://jsonschema.net/1/address/state",
+              "type": "string"
+            },
+            "postalCode": {
+              "id": "http://jsonschema.net/1/address/postalCode",
+              "type": "string"
+            }
+          }
+        },
+        "phoneNumber": {
+          "id": "http://jsonschema.net/1/phoneNumber",
+          "type": "array",
+          "items": [
+            {
+              "id": "http://jsonschema.net/1/phoneNumber/0",
+              "type": "object",
+              "properties": {
+                "type": {
+                  "id": "http://jsonschema.net/1/phoneNumber/0/type",
+                  "type": "string"
+                },
+                "number": {
+                  "id": "http://jsonschema.net/1/phoneNumber/0/number",
+                  "type": "string"
+                }
+              }
+            },
+            {
+              "id": "http://jsonschema.net/1/phoneNumber/1",
+              "type": "object",
+              "properties": {
+                "type": {
+                  "id": "http://jsonschema.net/1/phoneNumber/1/type",
+                  "type": "string"
+                },
+                "number": {
+                  "id": "http://jsonschema.net/1/phoneNumber/1/number",
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "required": [
+    "0",
+    "1"
+  ]
+}
