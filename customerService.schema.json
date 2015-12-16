@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "id": "http://jsonschema.net/firstName",
+      "type": "string"
+    },
+    "lastName": {
+      "id": "http://jsonschema.net/lastName",
+      "type": "string"
+    },
+    "age": {
+      "id": "http://jsonschema.net/age",
+      "type": "integer"
+    },
+    "address": {
+      "id": "http://jsonschema.net/address",
+      "type": "object",
+      "properties": {
+        "streetAddress": {
+          "id": "http://jsonschema.net/address/streetAddress",
+          "type": "string"
+        },
+        "city": {
+          "id": "http://jsonschema.net/address/city",
+          "type": "string"
+        },
+        "state": {
+          "id": "http://jsonschema.net/address/state",
+          "type": "string"
+        },
+        "postalCode": {
+          "id": "http://jsonschema.net/address/postalCode",
+          "type": "string"
+        }
+      }
+    },
+    "phoneNumber": {
+      "id": "http://jsonschema.net/phoneNumber",
+      "type": "array",
+      "items": [
+        {
+          "id": "http://jsonschema.net/phoneNumber/0",
+          "type": "object",
+          "properties": {
+            "type": {
+              "id": "http://jsonschema.net/phoneNumber/0/type",
+              "type": "string"
+            },
+            "number": {
+              "id": "http://jsonschema.net/phoneNumber/0/number",
+              "type": "string"
+            }
+          }
+        },
+        {
+          "id": "http://jsonschema.net/phoneNumber/1",
+          "type": "object",
+          "properties": {
+            "type": {
+              "id": "http://jsonschema.net/phoneNumber/1/type",
+              "type": "string"
+            },
+            "number": {
+              "id": "http://jsonschema.net/phoneNumber/1/number",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "age",
+    "address",
+    "phoneNumber"
+  ]
+}
