@@ -1,0 +1,39 @@
+#%RAML 0.8
+title: iRails
+version: v1
+
+#baseUri: http://iRails.io/api/{version}
+baseUri: http://mocksvc.mulesoft.com/mocks/1cfdcb60-9ac8-49ba-a34d-468284366a18/api/{version}
+mediaType: application/json
+protocols: [HTTPS]
+securitySchemes:
+  - basic:
+      type: Basic Authentication
+securedBy: [basic]
+
+/customers:
+  displayName: Customers
+  get:
+    description: Retrieve the full list of customers
+    queryParameters:
+      companyID:
+      country:
+      language:
+    responses:
+      200:
+        body:
+          application/json:
+            schema: !include customerListService.schema.json
+  /{custID}:
+    get:
+      description: Retrieve a specific Customer by customer ID
+      queryParameters:
+        companyID:
+        country:
+        language:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: !include customerService.schema.json
+    displayName: customer
